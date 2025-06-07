@@ -173,4 +173,88 @@
     <!-- Chatbot Widget -->
     <div class="chatbot-toggler" onclick="toggleChatbot()">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5v-4a2 2 0 012-2h10a2 2 0 012 2v4h-4m
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.77 9.77 0 01-4.1-.9L3 20l1.5-3.5A8.96 8.96 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+        </svg>
+    </div>
+    <div class="chatbot">
+        <div class="chatbot-header">
+            <h2 class="text-lg font-semibold">Business Assistant</h2>
+            <button onclick="toggleChatbot()">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="chatbot-body" id="chatBox">
+            <div class="chat-message bot-message">Hi! How can I assist you today?</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Type your message..." onkeydown="if(event.key === 'Enter') sendMessage()">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // Navigation Menu Toggle
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-menu');
+            menu.classList.toggle('active');
+        }
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Chatbot Toggle
+        function toggleChatbot() {
+            const chatbot = document.querySelector('.chatbot');
+            const toggler = document.querySelector('.chatbot-toggler');
+            chatbot.classList.toggle('active');
+            toggler.style.display = chatbot.classList.contains('active') ? 'none' : 'block';
+        }
+
+        // Chatbot Responses
+        const responses = {
+            "hi": "Hello! How can I help you today?",
+            "services": "We offer consulting, custom software development, and 24/7 support. Check out our Services section for more details!",
+            "contact": "You can reach us via the Contact section or send us a message here!",
+            "hours": "We're available 24/7 to assist you. What's on your mind?",
+            "default": "I'm not sure about that. Could you clarify or ask something else?"
+        };
+
+        // Send Message
+        function sendMessage() {
+            const input = document.getElementById('userInput');
+            const chatBox = document.getElementById('chatBox');
+            const userMessage = input.value.trim().toLowerCase();
+
+            if (userMessage !== '') {
+                // Add user message
+                const userDiv = document.createElement('div');
+                userDiv.className = 'chat-message user-message';
+                userDiv.textContent = userMessage;
+                chatBox.appendChild(userDiv);
+
+                // Add bot response
+                const botResponse = responses[userMessage] || responses["default"];
+                setTimeout(() => {
+                    const botDiv = document.createElement('div');
+                    botDiv.className = 'chat-message bot-message';
+                    botDiv.textContent = botResponse;
+                    chatBox.appendChild(botDiv);
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                }, 500);
+
+                input.value = '';
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        }
+    </script>
+</body>
+</html>
