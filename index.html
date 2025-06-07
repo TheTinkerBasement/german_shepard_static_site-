@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProBusiness Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" class="logo-icon">
+                    <circle cx="20" cy="20" r="18" fill="#4f46e5" stroke="#312e81" stroke-width="2"/>
+                    <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+                <span class="logo-text">ProBusiness Solutions</span>
+            </div>
+            <nav class="nav">
+                <a href="#contract-management" class="nav-link">Contract Management</a>
+                <a href="#procurement" class="nav-link">Procurement</a>
+                <a href="#supply-management" class="nav-link">Supply Management</a>
+                <a href="#finance" class="nav-link">Finance</a>
+                <a href="#recruitment" class="nav-link">Recruitment</a>
+                <a href="#audits" class="nav-link">Audits</a>
+                <a href="#inquiries" class="nav-link">Inquiries</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Streamline Your Business Operations</h1>
+            <p class="hero-subtitle">Professional solutions for contract management, procurement, finance, and more</p>
+            <button class="cta-button" onclick="scrollToSection('inquiries')">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Contract Management Section -->
+    <section id="contract-management" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <rect x="10" y="8" width="40" height="44" rx="4" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+                        <line x1="18" y1="20" x2="42" y2="20" stroke="#4f46e5" stroke-width="2"/>
+                        <line x1="18" y1="28" x2="38" y2="28" stroke="#4f46e5" stroke-width="2"/>
+                        <line x1="18" y1="36" x2="42" y2="36" stroke="#4f46e5" stroke-width="2"/>
+                        <circle cx="45" cy="15" r="8" fill="#10b981" stroke="white" stroke-width="2"/>
+                        <path d="M41 15L44 18L49 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">Contract Management</h2>
+                <p class="section-description">Comprehensive contract lifecycle management solutions to streamline your agreements from creation to renewal.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Digital Contracts</h3>
+                    <p>Create, store, and manage all your contracts in a secure digital environment.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Automated Workflows</h3>
+                    <p>Streamline approval processes with automated routing and notifications.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Compliance Tracking</h3>
+                    <p>Monitor contract compliance and receive alerts for important milestones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Procurement Section -->
+    <section id="procurement" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <rect x="8" y="15" width="44" height="35" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+                        <path d="M20 15V10C20 8.9 20.9 8 22 8H38C39.1 8 40 8.9 40 10V15" stroke="#f59e0b" stroke-width="2" fill="none"/>
+                        <circle cx="25" cy="30" r="3" fill="#f59e0b"/>
+                        <circle cx="35" cy="30" r="3" fill="#f59e0b"/>
+                        <path d="M25 35L30 40L35 35" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">Procurement</h2>
+                <p class="section-description">Optimize your purchasing processes with intelligent procurement solutions that reduce costs and improve efficiency.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Vendor Management</h3>
+                    <p>Centralized vendor database with performance tracking and evaluation.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Purchase Orders</h3>
+                    <p>Automated purchase order generation and approval workflows.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Cost Analysis</h3>
+                    <p>Real-time spend analysis and cost optimization recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supply Management Section -->
+    <section id="supply-management" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <rect x="5" y="35" width="50" height="20" rx="4" fill="#dcfce7" stroke="#10b981" stroke-width="2"/>
+                        <rect x="15" y="25" width="30" height="20" rx="3" fill="#dcfce7" stroke="#10b981" stroke-width="2"/>
+                        <rect x="25" y="15" width="10" height="20" rx="2" fill="#dcfce7" stroke="#10b981" stroke-width="2"/>
+                        <circle cx="12" cy="52" r="3" fill="#10b981"/>
+                        <circle cx="48" cy="52" r="3" fill="#10b981"/>
+                        <path d="M10 5L15 15L25 10" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">Supply Management</h2>
+                <p class="section-description">End-to-end supply chain visibility and control to ensure optimal inventory levels and timely deliveries.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Inventory Tracking</h3>
+                    <p>Real-time inventory monitoring with automated reorder points.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Logistics Optimization</h3>
+                    <p>Route optimization and delivery tracking for maximum efficiency.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Supplier Integration</h3>
+                    <p>Seamless integration with supplier systems for automated ordering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Finance Section -->
+    <section id="finance" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <circle cx="30" cy="30" r="25" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+                        <path d="M30 15V30L40 40" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+                        <text x="30" y="35" text-anchor="middle" fill="#ef4444" font-size="14" font-weight="bold">$</text>
+                        <rect x="10" y="45" width="40" height="8" rx="2" fill="#ef4444"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">Finance</h2>
+                <p class="section-description">Comprehensive financial management tools to track expenses, manage budgets, and ensure fiscal responsibility.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Budget Planning</h3>
+                    <p>Create and monitor budgets with variance analysis and forecasting.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Expense Management</h3>
+                    <p>Automated expense tracking and approval workflows.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Financial Reporting</h3>
+                    <p>Real-time financial dashboards and customizable reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recruitment Section -->
+    <section id="recruitment" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <circle cx="30" cy="20" r="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+                        <path d="M15 45C15 35 21.5 30 30 30C38.5 30 45 35 45 45" stroke="#6366f1" stroke-width="3" fill="none"/>
+                        <rect x="20" y="50" width="20" height="6" rx="3" fill="#6366f1"/>
+                        <circle cx="45" cy="15" r="8" fill="#10b981" stroke="white" stroke-width="2"/>
+                        <path d="M41 15L44 18L49 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">Recruitment</h2>
+                <p class="section-description">Streamlined talent acquisition processes to find, evaluate, and onboard the best candidates for your organization.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Candidate Tracking</h3>
+                    <p>Comprehensive applicant tracking system with automated screening.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Interview Management</h3>
+                    <p>Scheduling, evaluation tools, and collaborative hiring decisions.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Onboarding</h3>
+                    <p>Automated onboarding workflows and digital document management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audits Section -->
+    <section id="audits" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <rect x="10" y="10" width="35" height="40" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+                        <circle cx="40" cy="25" r="12" fill="none" stroke="#f59e0b" stroke-width="3"/>
+                        <path d="M35 25L38 28L45 20" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        <line x1="18" y1="22" x2="32" y2="22" stroke="#f59e0b" stroke-width="2"/>
+                        <line x1="18" y1="30" x2="28" y2="30" stroke="#f59e0b" stroke-width="2"/>
+                        <line x1="18" y1="38" x2="32" y2="38" stroke="#f59e0b" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">Audits</h2>
+                <p class="section-description">Comprehensive audit management solutions to ensure compliance, risk management, and operational excellence.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Audit Planning</h3>
+                    <p>Structured audit planning with risk assessment and scheduling.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Evidence Management</h3>
+                    <p>Digital documentation and evidence tracking throughout the audit process.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Reporting & Analytics</h3>
+                    <p>Automated audit reports with actionable insights and recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiries Section -->
+    <section id="inquiries" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <rect x="5" y="15" width="50" height="35" rx="5" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+                        <path d="M5 25L30 35L55 25" stroke="#4f46e5" stroke-width="2" fill="none"/>
+                        <circle cx="45" cy="15" r="8" fill="#10b981" stroke="white" stroke-width="2"/>
+                        <path d="M41 15L44 18L49 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">Inquiries</h2>
+                <p class="section-description">Get in touch with our team to learn more about our services or request a consultation.</p>
+            </div>
+            
+            <div class="contact-form-container">
+                <form id="inquiryForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service of Interest</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="contract-management">Contract Management</option>
+                            <option value="procurement">Procurement</option>
+                            <option value="supply-management">Supply Management</option>
+                            <option value="finance">Finance</option>
+                            <option value="recruitment">Recruitment</option>
+                            <option value="audits">Audits</option>
+                            <option value="multiple">Multiple Services</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Please describe your requirements or questions..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Send Inquiry</button>
+                </form>
+                
+                <div id="formSuccess" class="form-success" style="display: none;">
+                    <h3>Thank you for your inquiry!</h3>
+                    <p>We'll get back to you within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg width="30" height="30" viewBox="0 0 40 40" class="logo-icon">
+                        <circle cx="20" cy="20" r="18" fill="#4f46e5" stroke="#312e81" stroke-width="2"/>
+                        <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                    <span>ProBusiness Solutions</span>
+                </div>
+                <p>&copy; 2024 ProBusiness Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h4>Support Chat</h4>
+            <button id="closeChatbot" class="close-btn">&times;</button>
+        </div>
+        <div id="chatMessages" class="chat-messages">
+            <div class="bot-message">
+                <p>Hello! How can I help you today?</p>
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="handleChatKeyPress(event)">
+            <button onclick="sendMessage()" class="send-btn">Send</button>
+        </div>
+    </div>
+
+    <button id="chatToggle" class="chat-toggle">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+    </button>
+
+    <script src="main.js"></script>
+</body>
+</html>
