@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Business Website</title>
+  <style>
+    /* === Base Styles === */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* === Header & Logo === */
+    header {
+      background-color: #003366; /* Dark Blue */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    /* === Navigation Bar === */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #00509e;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* === Sections === */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      border-bottom: 1px solid #ddd;
+    }
+
+    section h2 {
+      color: #003366;
+      margin-top: 0;
+    }
+
+    /* === Inquiry Form === */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input, form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      background-color: #003366;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    form button:hover {
+      background-color: #00509e;
+    }
+
+    /* === Chatbot Styles === */
+    #chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      height: 400px;
+      z-index: 1000;
+    }
+
+    #chatbot iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 10px;
+    }
+
+    /* === Responsive Design === */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #chatbot {
+        width: 90%;
+        height: 300px;
+        right: 5%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Business Logo</h1>
+  </header>
+
+  <nav>
+    <a href="#contract">Contract Management</a>
+    <a href="#percarement">Percarement</a>
+    <a href="#supply">Supply Management</a>
+    <a href="#finance">Finance</a>
+    <a href="#recruitment">Recruitment</a>
+    <a href="#audits">Audits</a>
+    <a href="#inquiries">Inquiries</a>
+  </nav>
+
+  <section id="contract">
+    <h2>Contract Management</h2>
+    <p>Information about contract management services.</p>
+  </section>
+
+  <section id="percarement">
+    <h2>Percarement</h2>
+    <p>Information about percarement services.</p>
+  </section>
+
+  <section id="supply">
+    <h2>Supply Management</h2>
+    <p>Information about supply management services.</p>
+  </section>
+
+  <section id="finance">
+    <h2>Finance</h2>
+    <p>Information about financial services and support.</p>
+  </section>
+
+  <section id="recruitment">
+    <h2>Recruitment</h2>
+    <p>Details on hiring, staffing, and recruitment.</p>
+  </section>
+
+  <section id="audits">
+    <h2>Audits</h2>
+    <p>Audit procedures and compliance checks.</p>
+  </section>
+
+  <section id="inquiries">
+    <h2>Inquiries</h2>
+    <form id="inquiryForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Inquiry</button>
+    </form>
+  </section>
+
+  <!-- Chatbot Embed -->
+  <div id="chatbot">
+    <iframe src="https://www.chatbase.co/chatbot-iframe/YOUR_CHATBOT_ID_HERE"></iframe>
+  </div>
+
+  <!-- JavaScript: Form Email Handling -->
+  <script>
+    document.getElementById('inquiryForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = this.name.value;
+      const email = this.email.value;
+      const message = this.message.value;
+
+      window.location.href = `mailto:youremail@example.com?subject=Business Inquiry from ${name}&body=Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+    });
+  </script>
+</body>
+</html>
+
